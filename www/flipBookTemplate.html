@@ -1,0 +1,160 @@
+
+<div class="main-container" ng-style="{ 'width': coverWidth }">
+
+	<div class="book-binding" ng-style="{ 'height': coverHeight, 'left': bindingLeft }"></div>
+	
+	<!-- IT WILL CONTAIN ALL BOOK PAGES!!! -->
+	<div class="content-manager" style="display: none" ng-transclude></div>
+
+	<div class="book-container" ng-style="{ 'width': bookWidth, 'height': pageHeight }">
+		
+		<div class="page-container left-page bottom-page front-page" 
+			ng-style="{ 'width': pageWidth, 'height': pageHeight, 'background-color': '#fff' }">
+		</div>	
+		
+		<div class="page-container right-page bottom-page front-page"	
+			ng-style="{ 'width': pageWidth, 'height': pageHeight, 'background-color': '#fff' }">
+		</div>
+		
+		<!-- back pages front -->
+		<div class="page-container left-page bottom-page front-page" ng-style="{ 'width': pageWidth, 'height': pageHeight }"> 
+			
+			<div id="page-0" class="inner-container left-page" 
+				ng-style="{ 'width': pageWidth, 'height': pageHeight }"> 
+			</div>
+			
+			<!-- left page number -->
+			<div class="page-number" 	ng-style="{ 'width': pageWidth }">
+				<span  ng-if="showPageNums && pageNumRef.backLeft - 1 >= 0">
+					{{ pageNumRef.backLeft }}
+				</span>
+			</div>
+			
+		</div>
+		
+		<div class="page-container right-page bottom-page front-page"	ng-style="{ 'width': pageWidth, 'height': pageHeight }"> 
+			
+			<div id="page-5" class="inner-container right-page" 
+				ng-style="{ 'width': pageWidth, 'height': pageHeight }"> 
+			</div>
+			
+			<!-- right page number -->
+			<div class="page-number" 	ng-style="{ 'width': pageWidth }">
+				
+				<span ng-if="showPageNums && pageNumRef.backRight + 1 < length">
+					{{ pageNumRef.backRight + 2 }}
+				</span>
+			</div>
+		</div>
+
+		<!-- top pages -->
+		<!--'width': pageWidth, 'transform': animData.leftPage.frontScale,-->
+		<div class="page-container left-page top-page" 
+			ng-class="{ animating: animateLeft }"> 
+			
+			<!-- ng-include="pages[selectedPage.left]" -->
+			<div id="page-2" class="inner-container left-page" 
+				ng-style="{ 'width': pageWidth, 'height': pageHeight }"> 
+			</div>
+			
+			<!-- left page number -->
+			<div class="page-number left-page" 	ng-style="{ 'width': pageWidth }">
+				<span ng-if="showPageNums && pageNumRef.left >= 0">
+					{{ pageNumRef.left + 1 }}
+				</span>
+			</div>
+		</div>
+
+		<!-- 'width': pageWidth, 'transform': animData.rightPage.frontScale,	-->
+		<div class="page-container right-page top-page" 
+			ng-class="{ animating: animateRight }"> 
+			
+			<div id="page-3" class="inner-container right-page" 
+				ng-style="{ 'width': pageWidth, 'height': pageHeight }"> 
+			</div>
+			
+			<!-- right page number -->
+			<div class="page-number" 	ng-style="{ 'width': pageWidth }">
+				<span ng-if="showPageNums && pageNumRef.right < length">
+					{{ pageNumRef.right + 1 }}
+				</span>
+			</div>
+		</div>
+		
+		<!-- top pages internal shadows -->
+		<div class="shadow-container-left" ng-style="{ 'width': pageWidth, 'height': pageHeight }">
+			<div class="left-shadow-page floating-right" ng-style="{ 'height': pageHeight }"></div>
+		</div>
+		
+		<div class="shadow-container-right"	ng-style="{ 'width': pageWidth, 'height': pageHeight }">
+			<div class="right-shadow-page floating-left" ng-style="{ 'height': pageHeight }"></div>
+		</div>
+		
+		<!-- top pages back -->
+		<!--	'width': pageWidth, 'transform': animData.leftPage.backScale,		
+		ng-style=" { '-webkit-box-shadow': animData.left.backShadow, 'box-shadow': animData.right.backShadow } " -->
+		<div id="leftPage-target" class="page-container left-page bottom-page back-page"
+				ng-class="{ animating: animateLeft }" >
+					
+			<div class="shadow-container-right page-turning-shadow-right"	ng-style="{ 'width': pageWidth, 'height': pageHeight }">
+				<div class="right-shadow-page floating-left" ng-style="{ 'height': pageHeight }"></div>
+			</div>
+			
+			<!-- left back page content -->
+			<div id="page-1" class="inner-container floating-right" 
+				ng-style="{ 'width': pageWidth, 'height': pageHeight }"> 
+			</div>
+				
+			<!-- left back page number -->
+			<div class="page-number left-page" ng-style="{ 'width': pageWidth }">		
+				<span ng-if="showPageNums && pageNumRef.backLeft >= 0">
+					{{ pageNumRef.backLeft + 1 }}
+				</span>
+			</div>
+		</div>
+		
+		<!-- 'width': pageWidth, 'transform': animData.rightPage.backScale, -->
+		<div id="rightPpage-target" class="page-container right-page bottom-page back-page"
+				ng-class="{ animating: animateRight }"> 
+			
+			<div class="shadow-container-left" ng-style="{ 'width': pageWidth, 'height': pageHeight }">
+				<div class="left-shadow-page floating-right" ng-style="{ 'height': pageHeight }"></div>
+			</div>
+			
+			<!-- right back page content -->
+			<div id="page-4" class="inner-container floating-left" 
+				ng-style="{ 'width': pageWidth, 'height': pageHeight }"> 
+			</div>
+			
+			<!-- right back page number -->
+			<div class="page-number" ng-style="{ 'width': pageWidth }">
+				<span ng-if="showPageNums && pageNumRef.backRight < length">
+					{{ pageNumRef.backRight + 1 }}
+				</span>
+			</div>
+			
+		</div>
+		
+		<!-- turning page shadows -->
+		<!--	'width': pageWidth, 'transform': animData.leftPage.backScale,	-->
+		<div class="turning-page-shadow-left" ng-style="{ 'height': pageHeight }"
+				ng-class="{ animating: animateLeft }">
+		</div>-->
+		
+		<!-- 	'width': pageWidth, 'transform': animData.rightPage.backScale, -->
+		<div class="turning-page-shadow-right" ng-style="{ 'height': pageHeight }"
+				ng-class="{ animating: animateRight }">
+		</div>
+			
+		<!-- under turning page shadows -->
+		<div class="under-turning-shadow-left" ng-style="{ 'height': pageHeight }"
+			ng-class="{ animating: animateLeft }">
+		</div>
+		
+		<div class="under-turning-shadow-right" ng-style="{ 'height': pageHeight }"
+			ng-class="{ animating: animateRight }">
+		</div>
+
+	</div> <!--end book container-->
+
+</div> <!-- end main container -->s

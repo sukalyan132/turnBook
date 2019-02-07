@@ -1,0 +1,107 @@
+{
+  "_args": [
+    [
+      "ionic-img-cache",
+      "/home/sukalyan/Desktop/turnJs"
+    ]
+  ],
+  "_from": "ionic-img-cache@latest",
+  "_hasShrinkwrap": false,
+  "_id": "ionic-img-cache@1.3.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/ionic-img-cache",
+  "_nodeVersion": "11.2.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/ionic-img-cache_1.3.2_1544140948575_0.19257659720509923"
+  },
+  "_npmUser": {
+    "email": "bobrov1989@gmail.com",
+    "name": "bobrov1989"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "ionic-img-cache",
+    "raw": "ionic-img-cache",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ionic-img-cache/-/ionic-img-cache-1.3.2.tgz",
+  "_shasum": "da8a1ef1bbd69c70851626c650162e8aaf9bbb7e",
+  "_shrinkwrap": null,
+  "_spec": "ionic-img-cache",
+  "_where": "/home/sukalyan/Desktop/turnJs",
+  "author": {
+    "email": "bobrov1989@gmail.com",
+    "name": "Vitaliy Bobrov",
+    "url": "https://vitaliy-bobrov.github.io"
+  },
+  "bugs": {
+    "url": "https://github.com/vitaliy-bobrov/ionic-img-cache/issues"
+  },
+  "dependencies": {
+    "imgcache.js": "^1.1.0"
+  },
+  "description": "Image caching for Ionic 1.x applications.",
+  "devDependencies": {
+    "eslint-config-angular": "^0.5.0",
+    "eslint-plugin-angular": "4.0.0",
+    "gulp": "^4.0.0",
+    "gulp-eslint": "5.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-ng-annotate": "^2.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-size": "^3.0.0",
+    "gulp-uglify": "3.0.1"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 10,
+    "integrity": "sha512-U25otyMNb0OOnHJemzuVXLiQ1pK38RyhDnPevQ+SKES8g5CxT/TY0UMJf20EVsjYlGlD9rt0V4cFYGvGL4cS1A==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcCbiVCRA9TVsSAnZWagAA9yEP/jSjJEGyaVMn5cITlMYh\n/XRuCY0muDs6oXBNw7osYNHRk2haFF2VesTJrKMUMmbf+jdFVjoPYDQVEvgS\nxZE8W2DUG3c0h3RB9E49x6PXtFNknVLfi1AIuuXWk9bOj/4CJP66UgUN8fhP\nKcvKhbjxDs5DlYsA0cFbbA8PE3vmrlu4JRbb7w8fn1oLRWQ+jh8lMhmMIojB\n4PAHLBtSxqiJwGN0o8ir30GAxQlnVmkesu2mQI5HegF+NXu6jq10pur3tPee\nDxNvHYzI7M79d168+riHiQv8MGL3+U2bmBe2v/Vkep/51A7iu1QqK2uvii4R\n7Aamx2AYUdw2hRhgubQXVmf4mimDVM84psNMM7gnR4dHFIi/WhZZn6yC00t0\n+HwsfnM7uED+rVoYK4WZ401uRPv2xdNErl8INFzcC5vfUjk7B1zFnqvn06oF\nKwhCNr9O9XQnNdw1+SqABAbbeBPCn55IBHReFxCEcUU0pJLsovE+Ez2HF22f\nzKUXejru1lG4XAERrrM+pN4THgaYyARn0Df4+Y3DaMxLCQWmz5AzqQvKFdzi\nZrqVJ/l5U4fIqj20thAMe/vvBmhee+P+UWnqNW9j5rwhbJgqeFjvZ8rAfSNq\nHGZ+CLea3lDNgTcN2G8+PDdnrYt5Tsz2epSFADqUIjLM6ihRa+SuaqQr61K4\nXfbA\r\n=B6cA\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "da8a1ef1bbd69c70851626c650162e8aaf9bbb7e",
+    "tarball": "https://registry.npmjs.org/ionic-img-cache/-/ionic-img-cache-1.3.2.tgz",
+    "unpackedSize": 161687
+  },
+  "gitHead": "e676072c3807dc19b061b87aa9df8caf6d15d8e2",
+  "homepage": "https://github.com/vitaliy-bobrov/ionic-img-cache#readme",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "cordova",
+    "html5",
+    "imgcache",
+    "ionic",
+    "mobile",
+    "phonegap"
+  ],
+  "license": "MIT",
+  "main": "ionic-img-cache.js",
+  "maintainers": [
+    {
+      "name": "bobrov1989",
+      "email": "bobrov1989@gmail.com"
+    }
+  ],
+  "name": "ionic-img-cache",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitaliy-bobrov/ionic-img-cache.git"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "publishPackage": "npm run build && npm publish",
+    "start": "gulp"
+  },
+  "version": "1.3.2"
+}
